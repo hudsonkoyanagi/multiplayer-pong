@@ -1,17 +1,8 @@
+//Custom data object for game data
 public class GameDataPacket implements java.io.Serializable{
 
     private float p1y, p2y, ballx, bally, ballxVelocity, ballyVelocity;
-    private int[] score;
 
-    public GameDataPacket(float p1y, float p2y, float ballx, float bally, float ballxVelocity, float ballyVelocity, int[] score){
-        this.p1y = p1y;
-        this.p2y = p2y;
-        this.ballx = ballx;
-        this.bally = bally;
-        this.ballxVelocity = ballxVelocity;
-        this.ballyVelocity = ballyVelocity;
-        this.score = score;
-    }
     public GameDataPacket(float p1y, float p2y, float ballx, float bally, float ballxVelocity, float ballyVelocity){
         this.p1y = p1y;
         this.p2y = p2y;
@@ -20,7 +11,7 @@ public class GameDataPacket implements java.io.Serializable{
         this.ballxVelocity = ballxVelocity;
         this.ballyVelocity = ballyVelocity;
     }
-
+    //Standard getters and setters
     public float getP1y() {
         return p1y;
     }
