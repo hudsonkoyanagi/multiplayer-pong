@@ -11,6 +11,7 @@ public class GameDataPacket implements java.io.Serializable{
         this.ballxVelocity = ballxVelocity;
         this.ballyVelocity = ballyVelocity;
     }
+
     //Standard getters and setters
     public float getP1y() {
         return p1y;
